@@ -3,7 +3,7 @@ import Banner from "../src/components/Banner";
 import Feed from "../src/components/Feed";
 import Navbar from "../src/components/Navbar";
 
-export default function Home(props) {
+export default function Home({ products }) {
   return (
     <div className="bg-gray-200">
       <Head>
@@ -14,7 +14,7 @@ export default function Home(props) {
       <Navbar />
       <main className="max-w-screen-2xl mx-auto">
         <Banner />
-        <Feed products={props.products} />
+        <Feed products={products} />
       </main>
     </div>
   );
